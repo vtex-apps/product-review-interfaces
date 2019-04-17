@@ -1,0 +1,22 @@
+{
+  "vendor": "vtex",
+  "name": "review-app-example",
+  "version": "0.0.1",
+  "title": "Review App Example",
+  "description": "Example app of a review app in the platform.",
+  "builders": {
+    "messages": "1.x",
+    "store": "0.x",
+    "react": "3.x"
+  },
+  "mustUpdateAt": "2019-04-02",
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {
+    "vtex.product-review-blueprint": "1.x",
+    "vtex.product-summary": "2.x",
+    "vtex.store-header": "2.x",
+    "vtex.store": "2.x"
+  }
+}

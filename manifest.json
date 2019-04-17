@@ -1,0 +1,17 @@
+{
+  "vendor": "vtex",
+  "name": "product-review-interface",
+  "version": "1.0.0",
+  "title": "Product Review",
+  "description": "Product review interfaces",
+  "builders": {
+    "messages": "1.x",
+    "store": "0.x",
+    "react": "3.x"
+  },
+  "mustUpdateAt": "2019-04-02",
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {}
+}

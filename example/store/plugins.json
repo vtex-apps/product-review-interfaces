@@ -1,0 +1,6 @@
+{
+  "store.product > product-rating-summary": "product-rating-summary.example-review",
+  "store.product > product-reviews": "product-reviews.example-review",
+  "store.product > product-questions-and-answers": "product-questions-and-answers.example-review",
+  "product-summary.unstable--flex > product-rating-inline": "product-rating-inline.example-review"
+}
