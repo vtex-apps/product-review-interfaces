@@ -1,9 +1,9 @@
 {
   "vendor": "vtex",
-  "name": "product-review-blueprint",
+  "name": "product-review-interfaces",
   "version": "1.0.0",
-  "title": "Product Review Blueprint",
-  "description": "A product review app blueprint",
+  "title": "Product Review Interfaces",
+  "description": "Interfaces for a product review app",
   "builders": {
     "messages": "1.x",
     "store": "0.x",
