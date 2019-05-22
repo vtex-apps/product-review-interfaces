@@ -23,7 +23,7 @@ Make sure you have in your `blocks.json`:
 
 Make sure you are using the block `product-summary.shelf`. This will not work if it uses the `product-summary`.
 
-```json
+```js
 "product-summary.shelf": {
   "children": [
     // ...other blocks
