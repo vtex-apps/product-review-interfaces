@@ -13,5 +13,6 @@
   "scripts": {
     "postreleasy": "vtex publish --verbose"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

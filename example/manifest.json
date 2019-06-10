@@ -18,5 +18,6 @@
     "vtex.product-summary": "2.x",
     "vtex.store-header": "2.x",
     "vtex.store": "2.x"
-  }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

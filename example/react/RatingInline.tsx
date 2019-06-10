@@ -1,13 +1,13 @@
 import React, { useContext, FunctionComponent } from 'react'
 import { ProductSummaryContext } from 'vtex.product-summary'
-import { FormattedMessage } from 'react-intl'
+import Stars from './components/Stars'
 
-const RatingInline: FunctionComponent<RatingInlineProps> = props => {
+const RatingInline: FunctionComponent<RatingInlineProps> = () => {
   const { product } = useContext(ProductSummaryContext)
 
   return (
-    <div>
-      <FormattedMessage id="stars" values={{ name: product.productName }} />
+    <div title={product.name}>
+      <Stars rating={4} />
     </div>
   )
 }
