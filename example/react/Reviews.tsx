@@ -1,7 +1,9 @@
 import React, { FunctionComponent } from 'react'
 import { FormattedMessage } from 'react-intl'
+import withSettings, { Settings } from './components/withSettings'
+import { ChildProps } from 'react-apollo'
 
-const Reviews: FunctionComponent<ReviewsProps> = props => {
+const Reviews: FunctionComponent<ChildProps<Partial<Props>, Settings>> = props => {
   return (
     <div>
       <FormattedMessage
@@ -17,8 +19,8 @@ const Reviews: FunctionComponent<ReviewsProps> = props => {
   )
 }
 
-interface ReviewsProps {
+interface Props {
   productQuery: any
 }
 
-export default Reviews
+export default withSettings(Reviews)

@@ -7,7 +7,9 @@
   "builders": {
     "messages": "1.x",
     "store": "0.x",
-    "react": "3.x"
+    "react": "3.x",
+    "node": "4.x",
+    "graphql": "1.x"
   },
   "mustUpdateAt": "2019-04-02",
   "scripts": {
@@ -18,6 +20,28 @@
     "vtex.product-summary": "2.x",
     "vtex.store-header": "2.x",
     "vtex.store": "2.x"
+  },
+  "settingsSchema": {
+    "title": "Product Review Example",
+    "type": "object",
+    "properties": {
+      "storeId": {
+        "title": "Store ID",
+        "description": "Enter your Store ID",
+        "type": "string"
+      },
+      "productBinding": {
+        "title": "Product Reference",
+        "type": "string",
+        "default": "productId",
+        "enum": [
+          "productId",
+          "refId",
+          "skuId",
+          "slug"
+        ]
+      }
+    }
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
