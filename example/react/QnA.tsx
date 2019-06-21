@@ -1,16 +1,20 @@
-import React, { FunctionComponent } from 'react'
+import React, { FunctionComponent, useContext } from 'react'
 import { FormattedMessage } from 'react-intl'
+import { ProductContext } from 'vtex.product-context'
 
-const QnA: FunctionComponent<QnAProps> = props => {
+const QnA: FunctionComponent<QnAProps> = () => {
+  const { product } = useContext(ProductContext)
+
+  if (!product) {
+    return null
+  }
+
   return (
     <div>
       <FormattedMessage
         id="qna"
         values={{
-          name:
-            props.productQuery &&
-            props.productQuery.product &&
-            props.productQuery.product.productName,
+          name: product.productName,
         }}
       />
     </div>
