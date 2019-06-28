@@ -1,7 +1,8 @@
 import React, { FunctionComponent, useContext } from 'react'
-import { FormattedMessage } from 'react-intl'
 import { ProductContext } from 'vtex.product-context'
-import Stars from './components/Stars'
+import { Stars, NumberOfReviews, WriteAReview } from 'vtex.product-review-commons'
+import classNames from 'classnames'
+import randomReview from './modules/randomReview'
 
 const RatingSummary: FunctionComponent = () => {
   const { product } = useContext(ProductContext)
@@ -9,16 +10,18 @@ const RatingSummary: FunctionComponent = () => {
   if (!product) {
     return null
   }
+  
+  const review = randomReview(product.productName)
 
   return (
-    <div title={name}>
-      <Stars rating={4} />
-      <FormattedMessage
-        id="rating-summary"
-        values={{
-          name: product.productName,
-        }}
-      />
+    <div className={classNames('mv4')}>
+      <span className="mr3">
+        <Stars rating={review.rating} />
+      </span>
+      <span className="mr3">
+        <NumberOfReviews number={review.numberOfReviews} />
+      </span>
+      <WriteAReview number={review.numberOfReviews} />
     </div>
   )
 }

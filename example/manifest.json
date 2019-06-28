@@ -19,6 +19,7 @@
     "vtex.product-review-interfaces": "1.x",
     "vtex.product-summary": "2.x",
     "vtex.product-context": "0.x",
+    "vtex.product-review-commons": "0.x",
     "vtex.store": "2.x"
   },
   "settingsSchema": {
