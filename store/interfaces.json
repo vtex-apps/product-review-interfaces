@@ -18,5 +18,9 @@
   "product-rating-inline": {
     "component": "Noop",
     "extensible": "public"
+  },
+  "product-reviews-legacy": {
+    "component": "Noop",
+    "extensible": "public"
   }
 }

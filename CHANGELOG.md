@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+# Added
+- `product-reviews-legacy` interface
+
 ## [1.0.2] - 2019-08-29
 
 ## [1.0.1] - 2019-06-27
